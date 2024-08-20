@@ -193,7 +193,7 @@ const config = ref(props.config)
       <label for="pen_pressure_multiplier" class="form-label">{{ $t('config.pen_pressure_multiplier') }}</label>
       <input type="text" class="form-control" id="pen_pressure_multiplier" placeholder="1.0"
              v-model="config.pen_pressure_multiplier" />
-      <div class="form-text">{{ $t('config.pen_pressure_multiplier') }}</div>
+      <div class="form-text">{{ $t('config.pen_pressure_multiplier_desc') }}</div>
     </div>
 
   </div>

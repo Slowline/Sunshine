@@ -219,6 +219,8 @@
     "motion_as_ds4_desc": "Wenn deaktiviert, werden Bewegungssensor bei der Auswahl des Gamepad-Typs nicht berücksichtigt.",
     "mouse": "Maus-Eingabe aktivieren",
     "mouse_desc": "Erlaubt Gästen das Host-System mit der Maus zu steuern",
+    "pen_pressure_multiplier": "Pen Pressure Multiplier",
+    "pen_pressure_multiplier_desc": "Pen Pressure Multiplier",
     "native_pen_touch": "Native Pen/Touch Unterstützung",
     "native_pen_touch_desc": "Wenn aktiviert, durchläuft Sunshine natives Pen / Berühren von Moonlight-Clients. Dies kann nützlich sein, um ältere Anwendungen ohne nativen Stift-/Berührungs-Support zu deaktivieren.",
     "notify_pre_releases": "Pre-Release-Benachrichtigungen",
