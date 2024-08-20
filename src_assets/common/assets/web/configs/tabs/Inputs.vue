@@ -188,6 +188,14 @@ const config = ref(props.config)
       <div class="form-text">{{ $t('config.native_pen_touch_desc') }}</div>
     </div>
 
+    <!-- Key Repeat Frequency-->
+    <div class="mb-3" v-if="config.mouse === 'enabled' && platform === 'windows'">
+      <label for="pen_pressure_multiplier" class="form-label">{{ $t('config.pen_pressure_multiplier') }}</label>
+      <input type="text" class="form-control" id="pen_pressure_multiplier" placeholder="1.0"
+             v-model="config.pen_pressure_multiplier" />
+      <div class="form-text">{{ $t('config.pen_pressure_multiplier') }}</div>
+    </div>
+
   </div>
 </template>
 

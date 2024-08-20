@@ -1007,7 +1007,7 @@ namespace input {
       rotation,
       coords->first,
       coords->second,
-      from_clamped_netfloat(packet->pressureOrDistance, 0.0f, 1.0f),
+      from_clamped_netfloat(packet->pressureOrDistance * config::input.pen_pressure_multiplier, 0.0f, 1.0f),
       contact_area.first,
       contact_area.second,
     };

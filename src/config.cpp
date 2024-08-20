@@ -433,6 +433,7 @@ namespace config {
     true,  // always send scancodes
     true,  // high resolution scrolling
     true,  // native pen/touch support
+    1.0,  // pen pressure multiplier sensitivity
   };
 
   sunshine_t sunshine {
@@ -1095,6 +1096,13 @@ namespace config {
 
     bool_f(vars, "high_resolution_scrolling", input.high_resolution_scrolling);
     bool_f(vars, "native_pen_touch", input.native_pen_touch);
+
+    double pen_pressure_multiplier { 0 };
+    double_between_f(vars, "pen_pressure_multiplier", pen_pressure_multiplier, { 0, std::numeric_limits<double>::max() });
+
+    if (pen_pressure_multiplier > 0) {
+      config::input.pen_pressure_multiplier = pen_pressure_multiplier;
+    }
 
     bool_f(vars, "notify_pre_releases", sunshine.notify_pre_releases);
 

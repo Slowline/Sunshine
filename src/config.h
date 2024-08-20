@@ -137,6 +137,7 @@ namespace config {
 
     bool high_resolution_scrolling;
     bool native_pen_touch;
+    double pen_pressure_multiplier;
   };
 
   namespace flag {
